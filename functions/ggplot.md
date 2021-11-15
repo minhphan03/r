@@ -11,11 +11,11 @@
   - in effect, `geom_bar()` uses `stat_count()` by default: it counts the number of cases at each x position. `geom_col(…)` is `geom_bar(stat = “identity”)`
   - that is, if you already have a data frame with neat, already manipulated (like a two way contingency table), you can skip adding columns into the arguments into the `ggplot()` function for summarizing and go straight to `geom_col()` and use the `aes()` function inside it to declare the columns that you want to put into.
   - **YOU CAN ADD `aes()` FUNCTION TO ANY OF THE GEOM FUNCTIONS**
-
 * `labs()`: modify axis, legend, and plot labels
   * `y=`: change legend name of the vertical axis
-
+    * `title=`: change title
 * `facet_wrap(~{column name})`: separate the original plot into a multi-panel bar plot in regard to the column name
+* `coord_flip()` : flip the coordinates
 
 For example:
 
