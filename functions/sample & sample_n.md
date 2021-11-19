@@ -1,4 +1,4 @@
-### sample()
+## sample() & sample_n()
 
 Used to generate uniform distribution integer values
 
